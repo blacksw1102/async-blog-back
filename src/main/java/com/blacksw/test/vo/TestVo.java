@@ -3,14 +3,14 @@ package com.blacksw.test.vo;
 // Lombok 적용 필요
 public class TestVo {
 	
-	private String id;
+	private Integer id;
 	private String name;
 	
-	public String getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	

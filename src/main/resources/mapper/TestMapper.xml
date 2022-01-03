@@ -3,6 +3,6 @@
 
 <mapper namespace="com.blacksw.test.mapper.TestMapper">
 	<select id="selectTest" resultType="com.blacksw.test.vo.TestVo"> 
-		SELECT 'BLACKSW' AS NAME
+		SELECT * FROM test_table
 	</select>
 </mapper>

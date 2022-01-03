@@ -1,8 +1,5 @@
 package com.blacksw.config;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -23,9 +20,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfiguration {
 
-	private static final String API_NAME = "TEST API";
+	private static final String API_NAME = "Async Blog API";
 	private static final String API_VERSION = "0.0.1";
-	private static final String API_DESCRIPTION = "This is a test swagger document.";
+	private static final String API_DESCRIPTION = "This is a async-blog swagger document.";
 	
 	@Bean
 	public Docket restAPI() {
@@ -47,7 +44,7 @@ public class SwaggerConfiguration {
 		//		.globalOperationParameters(globalParamters)
 				.apiInfo(apiInfo())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.blacksw.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.blacksw"))
 				.paths(PathSelectors.any())
 				.build();
 	}
